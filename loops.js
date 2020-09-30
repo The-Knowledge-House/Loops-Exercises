@@ -16,10 +16,11 @@ for (let i = 1; i <= 10; i++) {
 
 let num= 5;
 while(num<=50){
+  console.log(num)
   num=num+5;
 
 }
-console.log(num)
+
 
 //Write a function that takes an array of numbers as an argument.
 //This function should return the first duplicate number in the array:
