@@ -24,16 +24,11 @@ console.log([i]);
 // For example: [2,7,5,9,8,7] should return 7;
 
 let arr = [2, 7, 5, 9, 8, 7];
-function duplicateNumber(arr) {
-  let duplica te;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr.lastIndexOf(arr[i]) !== i) {
-      duplicate = arr[i];
-      break;
-    }
-  }
-  console.log(duplicate);
-}
+
+const dupli = arr.filter((x, index) => {
+  return arr.indexOf(x) !== index;
+})
+console.log(dupli)
 
 //Remembering the results from the conditionals exercise on Monday
 // use the assignGrade function by logging every value from 60 to 100:
