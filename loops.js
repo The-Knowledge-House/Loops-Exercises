@@ -4,13 +4,46 @@
 //Bonus: Use a nested for loop to show the tables for every
 //multiplier from 1 to 10 (100 results total)
 
+for (let i = 0; i <= 10; i++) {
+    let multi = i * 9;
+    console.log(multi);
+}
+
+
 //Write a while loop that starts counting from 5.
 //Count up to (including) 50 and count only every fifth number
 //Don' forget to log it
 
+let i = 5;
+while (i <= 50) {
+    console.log(i);
+
+    i++
+}
+
+
+
 //Write a function that takes an array of numbers as an argument.
 //This function should return the first duplicate number in the array:
 // For example: [2,7,5,9,8,7] should return 7;
+
+let testArr = [2, 7, 5, 9, 8, 7];
+
+function findDuplicate(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                return arr[i];
+            }
+        }
+    }
+    return -1; // if there is no duplicate number
+}
+console.log(findDuplicate(testArr));
+
+
+
+
 
 //Remembering the results from the conditionals exercise on Monday
 // use the assignGrade function by logging every value from 60 to 100:
