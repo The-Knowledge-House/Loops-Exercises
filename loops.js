@@ -4,11 +4,16 @@
 //Bonus: Use a nested for loop to show the tables for every
 //multiplier from 1 to 10 (100 results total)
 
-let result;
-let userinput = prompt("Enter the number for which you want the table");
-for (let i = 0; i < 11; i++) {
-  result = userinput * i;
-  console.log(`${userinput} * ${i} = ${result}`);
+let multiplier = 9;
+for (let i = 0; i <= 10; i++) {
+  let result = multiplier * i;
+  console.log(multiplier + ' * ' + i + ' = ' + result);
+}
+for (let multiplier = 0; multiplier <= 10; multiplier++) {
+  for (let i = 0; i <= 10; i++) {
+    let result = multiplier * i;
+    console.log(multiplier + ' * ' + i + ' = ' + result);
+  }
 }
 
 //Write a while loop that starts counting from 5.
