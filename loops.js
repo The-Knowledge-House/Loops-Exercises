@@ -4,9 +4,23 @@
 //Bonus: Use a nested for loop to show the tables for every
 //multiplier from 1 to 10 (100 results total)
 
-for (let i = 1; i <= 10; i++) {
-    let timesNine = i * 9;
-    console.log(`${i} * 9 = ${timesNine}`);
+// My code:
+// for (let i = 1; i <= 10; i++) {
+//     let timesNine = i * 9;
+//     console.log(`${i} * 9 = ${timesNine}`);
+// }
+
+// Full:
+let multiplier = 9;
+for (let i = 0; i <= 10; i++) {
+    let result = multiplier * i;
+    console.log(multiplier + ' * ' + i + ' = ' + result);
+}
+for (let multiplier = 0; multiplier <= 10; multiplier++) {
+    for (let i = 0; i <= 10; i++) {
+        let result = multiplier * i;
+        console.log(multiplier + ' * ' + i + ' = ' + result);
+    }
 }
 
 //Write a while loop that starts counting from 5.
@@ -35,3 +49,19 @@ console.log(duplicate)
 // use the assignGrade function by logging every value from 60 to 100:
 //your log should show "For 88, you got a B" "For 90 you got an A"etc..
 
+function assignGrade(score) {
+    if (score > 90) {
+        return 'A';
+    } else if (score > 80) {
+        return 'B';
+    } else if (score > 70) {
+        return 'C';
+    } else if (score > 65) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+for (let i = 80; i <= 100; i++) {
+    console.log('For ' + i + ', you got a ' + assignGrade(i));
+}
