@@ -15,6 +15,19 @@ for (let i = 0; i < num2.length; i++) {
 }
 console.log(num2);
 
+let multiplier = 9;
+ for (let i = 0; i <= 10; i++) {
+     let result = multiplier * i;
+     console.log(multiplier + ' * ' + i + ' = ' + result);
+ }
+ for (let multiplier = 0; multiplier <= 10; multiplier++) {
+  for (let i = 0; i <= 10; i++) {
+   let result = multiplier * i;
+    console.log(multiplier + ' * ' + i + ' = ' + result);
+  }
+ }
+
+
 //Write a while loop that starts counting from 5.
 //Count up to (including) 50 and count only every fifth number
 //Don' forget to log it
@@ -45,7 +58,7 @@ console.log(findDuplicate(testArr));
 //Remembering the results from the conditionals exercise on Monday
 // use the assignGrade function by logging every value from 60 to 100:
 //your log should show "For 88, you got a B" "For 90 you got an A"etc..
-/*function assignGrade(score) {
+function assignGrade(score) {
   switch (true) {
     case score >= 95:
       return "A";
@@ -63,7 +76,8 @@ console.log(findDuplicate(testArr));
       return "F";
       break;
   }
+  for (let i = 80; <= 100; i++){
+    console.log(`For a score of ${ i } your grade is  + ${assignGrade(i)}`);
+  }
 }
-console.log('You got a ' + assignGrade(90));
-console.log('You got a ' + assignGrade(88));
-console.log('You got a ' + assignGrade(68));*/
+
